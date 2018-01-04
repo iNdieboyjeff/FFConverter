@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="uk.me.jeffsutton.ui.FFBuilder">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="905" height="703"/>
+    </constraints>
+    <properties>
+      <minimumSize width="600" height="600"/>
+      <preferredSize width="600" height="800"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="4935c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="etched" title="Input Directory"/>
+        <children>
+          <component id="d0429" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="797" height="24"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="3cc5a" class="javax.swing.JButton" binding="btnDirectoryChooser">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false">
+                <preferred-size width="36" height="32"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <text value="..."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="dd4f9" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="FFmpeg Options"/>
+        <children>
+          <grid id="2cee3" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="Video"/>
+            <children>
+              <component id="f4698" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Codec"/>
+                </properties>
+              </component>
+              <hspacer id="f1686">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="cc12e" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="libx264"/>
+                    <item value="libx265"/>
+                    <item value="hevc"/>
+                    <item value="h264_nvenc"/>
+                    <item value="hevc_nvenc"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="7c4ee" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Profile"/>
+                </properties>
+              </component>
+              <component id="7e1b6" class="javax.swing.JComboBox" binding="comboBox2" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="high"/>
+                    <item value="main"/>
+                    <item value="baseline"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="b84b7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Level"/>
+                </properties>
+              </component>
+              <component id="c1fd5" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="4.0"/>
+                    <item value="4.1"/>
+                    <item value="4.2"/>
+                    <item value="5.0"/>
+                    <item value="5.1"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="4eddc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Preset"/>
+                </properties>
+              </component>
+              <component id="e67fd" class="javax.swing.JComboBox" binding="comboBox6" default-binding="true">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="ultrafast"/>
+                    <item value="superfast"/>
+                    <item value="veryfast"/>
+                    <item value="faster"/>
+                    <item value="fast"/>
+                    <item value="medium"/>
+                    <item value="slow"/>
+                    <item value="slower"/>
+                    <item value="veryslow"/>
+                    <item value="placebo"/>
+                  </model>
+                  <selectedIndex value="6"/>
+                </properties>
+              </component>
+              <component id="f047e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Container"/>
+                </properties>
+              </component>
+              <component id="4faaf" class="javax.swing.JComboBox" binding="comboBox7" default-binding="true">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="mp4"/>
+                    <item value="mkv"/>
+                  </model>
+                  <selectedIndex value="1"/>
+                </properties>
+              </component>
+              <component id="bbece" class="javax.swing.JCheckBox" binding="forceVideoEncodingCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Force video encoding"/>
+                </properties>
+              </component>
+              <component id="544b2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Bitrate:"/>
+                </properties>
+              </component>
+              <component id="fac03" class="javax.swing.JComboBox" binding="comboBox8" default-binding="true">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="1M"/>
+                    <item value="2M"/>
+                    <item value="3M"/>
+                    <item value="4M"/>
+                    <item value="5M"/>
+                    <item value="6M"/>
+                    <item value="7M"/>
+                    <item value="8M"/>
+                    <item value="9M"/>
+                    <item value="10M"/>
+                    <item value="11M"/>
+                    <item value="12M"/>
+                    <item value="13M"/>
+                  </model>
+                  <selectedIndex value="2"/>
+                </properties>
+              </component>
+              <component id="19386" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Scale"/>
+                </properties>
+              </component>
+              <component id="6bf02" class="javax.swing.JComboBox" binding="comboBox9" default-binding="true">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="None"/>
+                    <item value="640x480"/>
+                    <item value="720x576"/>
+                    <item value="1280x720"/>
+                    <item value="1920x1080"/>
+                    <item value="3840x2160"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="ff08a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Aspect"/>
+                </properties>
+              </component>
+              <component id="453dc" class="javax.swing.JComboBox" binding="comboBox10" default-binding="true">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="None"/>
+                    <item value="4/3"/>
+                    <item value="16/9"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="ba361" class="javax.swing.JCheckBox" binding="deinterlaceCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Deinterlace"/>
+                </properties>
+              </component>
+              <component id="ff4cf" class="javax.swing.JComboBox" binding="comboBox11" default-binding="true">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="yadif (AUTO)"/>
+                    <item value="yadif (TFF)"/>
+                    <item value="yadif (BFF)"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="c17f0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="CRF"/>
+                </properties>
+              </component>
+              <component id="aad4a" class="javax.swing.JComboBox" binding="comboBox12" default-binding="true">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="0"/>
+                    <item value="1"/>
+                    <item value="2"/>
+                    <item value="3"/>
+                    <item value="4"/>
+                    <item value="5"/>
+                    <item value="6"/>
+                    <item value="7"/>
+                    <item value="8"/>
+                    <item value="9"/>
+                    <item value="10"/>
+                    <item value="11"/>
+                    <item value="12"/>
+                    <item value="13"/>
+                    <item value="14"/>
+                    <item value="15"/>
+                    <item value="16"/>
+                    <item value="17"/>
+                    <item value="18"/>
+                    <item value="19"/>
+                    <item value="20"/>
+                    <item value="21"/>
+                    <item value="22"/>
+                    <item value="23"/>
+                    <item value="24"/>
+                    <item value="25"/>
+                    <item value="26"/>
+                    <item value="27"/>
+                    <item value="28"/>
+                    <item value="29"/>
+                    <item value="30"/>
+                    <item value="31"/>
+                    <item value="32"/>
+                    <item value="33"/>
+                    <item value="34"/>
+                    <item value="35"/>
+                    <item value="36"/>
+                  </model>
+                  <selectedIndex value="21"/>
+                </properties>
+              </component>
+              <component id="d34d1" class="javax.swing.JCheckBox" binding="copyVideoOnlyCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Copy video only"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="53399" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none" title="Audio"/>
+            <children>
+              <component id="c7f85" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Codec"/>
+                </properties>
+              </component>
+              <hspacer id="7f0d9">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="b50a3" class="javax.swing.JComboBox" binding="comboBox4" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="aac"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="334a3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Bitrate"/>
+                </properties>
+              </component>
+              <component id="48ab8" class="javax.swing.JComboBox" binding="comboBox5" default-binding="true">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="128k"/>
+                    <item value="192k"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="4128e" class="javax.swing.JCheckBox" binding="chkDownmix">
+                <constraints>
+                  <grid row="1" column="0" row-span="2" col-span="4" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <selected value="true"/>
+                  <text value="If first audio is 5.1 or greater, create stereo version as first audio stream"/>
+                </properties>
+              </component>
+              <component id="3540" class="javax.swing.JCheckBox" binding="copyAudioOnlyProcessCheckBox" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Copy audio - only process AC3 streams to AAC"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <component id="f63dd" class="javax.swing.JButton" binding="PROCESSButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="PROCESS"/>
+        </properties>
+      </component>
+      <grid id="a850c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Output Options">
+          <font/>
+        </border>
+        <children>
+          <component id="20b66" class="javax.swing.JCheckBox" binding="generateScriptCheckBox" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Generate script"/>
+            </properties>
+          </component>
+          <component id="57753" class="javax.swing.JCheckBox" binding="appendToOutputCheckBox" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Append to output"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <scrollpane id="48ea3">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="c86e7" class="javax.swing.JTextPane" binding="textPane1" default-binding="true">
+            <constraints/>
+            <properties>
+              <font name="Courier New"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
